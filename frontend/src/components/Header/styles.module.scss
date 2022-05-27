@@ -1,0 +1,19 @@
+.nav {
+  height: 11vh;
+  // position: relative;
+
+  img {
+    max-width: 175px;
+    width: 100%;
+  }
+}
+
+.menu_toggle{
+  margin-left: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .menu_toggle {
+    display: none;
+  }
+}

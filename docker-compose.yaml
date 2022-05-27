@@ -1,0 +1,25 @@
+version: "3.9"
+services:
+  backend:
+    tty: true
+    container_name: backend
+    build: ./backend
+    ports:
+      - "8080:8080"
+    networks:
+      - servers
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker_aws
+
+  frontend:
+    tty: true
+    container_name: frontend
+    build: ./frontend
+    ports:
+      - "3000:3000"
+    networks:
+      - servers
+    
+networks:
+  servers:
+    driver: bridge

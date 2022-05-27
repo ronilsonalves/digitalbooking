@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+
+  div {
+    width: 40px;
+    height: 40px;
+    max-height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    text-align: center;
+  }
+
+  span {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+}
+
+

@@ -1,0 +1,42 @@
+.modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999999999999999999999999999999999999999999999;
+  background-color: var(--bs-gray-900);
+
+  
+}
+
+.close {
+  width: 32px;
+  height: 32px;
+
+  top: 80px;
+  left: calc(50% + 395px);
+
+  display: flex;
+  align-items: center;
+
+  position: relative;
+  z-index: 999999999999999999999999999999999999999999999;
+
+  &::before, &::after {
+    content: ' ';
+    position: absolute;
+    width: 2.5px;
+    height: 24px;
+    background-color: #fff;
+  }
+
+  &:before{
+    transform: rotate(45deg) ;
+  }
+
+  &:after{
+    transform: rotate(-45deg);
+  }
+
+}

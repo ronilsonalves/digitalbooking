@@ -1,0 +1,42 @@
+version: "3.7"
+services:
+  backend:
+    tty: true
+    container_name: backend
+    image: "ronilsonalves/digitalbooking:backend"
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 512M
+        reservations:
+          cpus: '0.25'
+          memory: 256M
+    ports:
+      - "8080:8080"
+    networks:
+      - servers
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker_aws
+
+  frontend:
+    tty: true
+    container_name: frontend
+    image: "ronilsonalves/digitalbooking:frontend"
+    deploy:
+      resources:
+        limits:
+          cpus: '0.25'
+          memory: 512M
+        reservations:
+          cpus: '0.10'
+          memory: 128M
+    ports:
+      - "3000:3000"
+      - "443:3000"
+    networks:
+      - servers
+
+networks:
+  servers:
+    driver: bridge

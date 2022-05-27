@@ -1,0 +1,137 @@
+$primary: #FBC02D;
+$secondary: #263238;
+$light: #FFFFFF;
+$box-shadow-sm: 0px 0px 5px rgba(0, 0, 0, 0.2);
+
+@import "~bootstrap/scss/bootstrap";
+
+body {
+  overflow-x: hidden;
+}
+
+* {
+  border: 0;
+  outline: 0;
+}
+
+:root {
+  --bs-yellow: rgb(251, 192, 45);
+  --bs-gray-300: #DFE4EA;
+  --bs-gray-200: #f7f7f7;
+  --bs-gray-400: #607D8B;
+  --bs-gray-700: #31363F;
+  --bs-gray-900: #263238;
+  --bs-red-200: rgba(220, 53, 69, 1);
+}
+
+main {
+  background-color: #f7f7f7;
+  min-height: 78vh;
+  display: flex;
+  flex-direction: column;
+}
+
+body, input, button {
+  font-family: 'Poppins', sans-serif;
+}
+
+textarea {
+  resize: none;
+}
+ 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* RESET DE ALGUMAS PROPRIEDADES */
+.form-control:focus {
+  box-shadow: none;
+}
+
+textarea:focus,
+button:focus,
+select:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+  border-color: none;
+  box-shadow: none;
+  outline: none;
+}
+
+/* RETIRANDO A FUNCIONALIDADE DEFAULT DE MOSTRAR A SENHA DO EDGE */
+input::-ms-reveal,
+input::-ms-clear {
+  display: none;
+}
+
+input:focus {
+  outline: 0 !important;
+  outline: none !important;
+}
+
+input {
+  outline: 0 !important;
+  outline: none !important;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+}
+
+/* CLASSES GLOBAIS (CLASSES QUE SERÃO UTILIZADAS EM MAIS DE UM COMPONENTE */
+.min-height-100 { min-height: 100vh; }
+.font-500 { font-weight: 500; }
+.font-600 { font-weight: 600; }
+.font-700 { font-weight: 700; }
+.font-size-14 { font-size: 14px; }
+.font-size-12 { font-size: 12px; }
+.max-width-1180 { max-width: 1280px;}
+.bg-gray-card { background-color: #f7f7f7;}
+
+.height-38 {
+  height: 38px;
+}
+
+.height_150 {
+  min-height: 150px;
+}
+
+.fs-12 { font-size: 12px;}
+.fs-14 { font-size: 14px;}
+.fs-15 { font-size: 15px;}
+.fs-20 { font-size: 20px;}
+.fs-24 { font-size: 24px;}
+
+.background-error-input {
+  background-color: #FFE1E1 !important;
+}
+
+.bg-transparent {
+  background-color: transparent !important;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.shadow_input {
+  box-shadow: 0px 1px 3px #bbbbbb;
+}
+
+@import "./calendarStyle.scss";
+@import "./map.Style.scss";

@@ -1,0 +1,70 @@
+.page {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  z-index: 99999999999999999999;
+
+  justify-content: center;
+  align-items: center;
+
+  padding: 0 20px;
+}
+
+.container{
+  width: 100%;
+  max-width: 500px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  background-color: #fff;
+
+  padding: 20px 15px;
+
+  a {
+    max-width: 200px;
+    width: 100%;
+    display: block;
+  }
+
+}
+.title{
+  color: var(--bs-yellow);
+  font-size: 1.5rem;
+  font-weight: 500;
+
+  margin: 0;
+  padding: 0;
+
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.frase {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.box_message {
+  margin: 15px 0px;
+}
+
+.botao{
+  color: #fff;
+  max-width: 200px;
+  height: 40px;
+  width: 100%;
+  display: block;
+  background-color: #dc3545;
+  border-radius: 5px;
+}

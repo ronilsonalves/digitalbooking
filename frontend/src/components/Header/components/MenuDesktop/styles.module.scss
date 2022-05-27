@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  align-items: center;
+
+  margin-left: auto;
+}
+
+.box_button a {
+  padding: 10px 40px;
+  margin-left: 10px;
+
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 1px solid var(--bs-yellow);
+  transition: background 0.2s;
+
+  color: var(--bs-yellow);
+
+  &:hover {
+    background-color: var(--bs-yellow);
+    color: #ffffff;
+  }
+}
+
+.reservations {
+  // background-color: orangered;
+  min-height: 100%;
+  padding: 7px 0px;
+  margin-right: 10px;
+  padding-right: 5px;
+  border-right: 2px solid #cccccc;
+
+  button {
+    font-size: 15px;
+  }
+}
+
+.logout {
+  margin-left: 15px;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    display: none;
+  }
+}

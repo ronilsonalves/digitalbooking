@@ -1,0 +1,45 @@
+.card {
+    min-height: 235px;
+    box-shadow: 0px 0px 3px #cccccc;
+
+  }
+  
+  .description::after {
+    content: " mais...";
+    color: var(--bs-yellow);
+    cursor: pointer;
+  }
+  
+  .box_image {
+    position: relative;
+  
+    svg {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+  
+      width: 23px;
+      height: 23px;
+  
+      cursor: pointer;
+    }
+  
+    img {
+      width: 100%;
+      max-width: 360px;
+    }
+  }
+  
+  @media screen and (min-width: 577px) {
+    .card {
+      display: flex;
+  
+      .box_image {
+        width: 50%;
+      }
+  
+      .info {
+        flex: 1;
+      }
+    }
+  }

@@ -1,0 +1,16 @@
+.option {
+  width: 95% !important;
+  border-top: 1px solid var(--bs-yellow);
+}
+
+.option:hover {
+  cursor: pointer;
+}
+
+.option:first-child {
+  border: none;
+}
+
+.react_select_container {
+  width: 100%;
+}

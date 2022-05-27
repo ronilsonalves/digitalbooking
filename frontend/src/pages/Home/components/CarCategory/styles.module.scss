@@ -1,0 +1,21 @@
+.shadow {
+  box-shadow: 0 4px 3px -1px rgba(0, 0, 0, 0.3);
+}
+
+.box_image {
+
+  img {
+    width: auto;
+    height: 135px;
+  }
+}
+
+.gap {
+  gap: 1px;
+}
+
+.card {
+  width: 100%;
+  flex: 1;
+  background-color: orange;
+}

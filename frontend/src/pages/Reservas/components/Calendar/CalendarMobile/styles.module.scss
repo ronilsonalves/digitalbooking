@@ -1,0 +1,17 @@
+.calendar_mobile {
+  padding: 10px 20px;
+  border: 0px solid #000000;
+  box-shadow: 0px 2px 2px #b6b6b6;
+}
+
+.container {
+  // background-color: green;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 669px) {
+  .container {
+    display: none;
+  }
+}

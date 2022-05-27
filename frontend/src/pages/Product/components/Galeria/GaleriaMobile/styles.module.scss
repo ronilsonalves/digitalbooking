@@ -1,0 +1,29 @@
+.container {
+  height: 400px;
+
+  img {
+    object-fit: cover;
+  }
+}
+
+.image {
+  max-height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 580px) {
+  .container, .box_image {
+    height: 350px;
+  }
+
+  .image {
+    max-height: 350px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .container {
+    display: none;
+  }
+}
