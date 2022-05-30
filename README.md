@@ -13,7 +13,7 @@
 * [O que podemos melhorar?](#o-que-podemos-melhorar?)
 
 ## Informações
-> O versionamento deste repositório foi realizado usando o Gitlab.
+> Originalmente a hospedagem deste repositório foi feita utilizando o Gitlab.
 
 ## Equipe
 > Abaixo você confere a equipe do nosso PI, bem como pelo que ficou responsável cada um de nós.
@@ -58,7 +58,7 @@
 - Painel Administrativo para cadastro de novos produtos
 
 ## Captura de tela
-![Digital Booking](http://cdn.ronilsonalves.com/sitepessoal/projetos/digitalbooking.png "Digital Booking")
+![Digital Booking](https://cdn.ronilsonalves.com/sitepessoal/projetos/digitalbooking.png "Digital Booking")
 
 ## O que podemos melhorar?
 > Destaco aqui pontos de melhoria em nosso projeto
